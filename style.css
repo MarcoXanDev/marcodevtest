@@ -1,0 +1,382 @@
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif ;
+    box-sizing: border-box;
+   }
+
+   html,body{
+    background-color: #090909;
+   }
+
+   /*Responsive*/
+
+
+   @media (max-width: 1000px){
+    .main{
+        width: 100%;
+        display: flex;
+
+    }
+
+    nav a{
+        font-size: 11px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav .logomenu a{
+        font-size: 13px;
+    }
+
+    .textoHeader p{
+        padding: 40px;
+    }
+
+    main{
+        width: 100%;
+        display: flexbox;
+        
+    }
+     div.textMain p{
+        text-align: center;
+
+        font-size: 25px;
+    }
+   }
+
+   @media (max-width: 768px){
+    .main{
+        width: 100%;
+        display: flex;
+
+    }
+
+    nav{
+        position: sticky;
+    }
+
+    nav a{
+        font-size: 11px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav .logomenu a{
+        font-size: 13px;
+    }
+
+    .textoHeader p{
+        padding: 40px;
+    }
+
+    main{
+        margin-top: 0;
+        width: 100%;
+        padding: 20px;
+        display: flexbox;
+        
+    }
+     div.textMain p{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    div.textMain h1{
+        text-align: center;
+    }   
+   }
+
+   @media (max-width: 480px){
+
+
+    .main{
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+
+    }  
+
+    .main .textoHeader{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+
+    }
+
+     div .textoHeader h1{
+        font-size: 70px;
+    }
+
+    div .textoHeader p{
+        font-size: 20px;
+        padding: 22px;
+    }
+
+    .navegarMenu{
+        display: none;
+    }
+    main{
+
+        text-align: left;
+        float: left;
+        width: 100%;
+
+        
+    }
+     div.textMain p{
+       padding: -40px;
+        margin-bottom: 90px;
+        width: 100%;
+        text-align: left;
+        
+       font-size: 14px;
+    }
+
+    div.textMain h1{
+        text-align: left;
+        font-size: 53px;
+
+    }
+
+    .imageMain{
+        margin-top: -80px;
+
+       box-sizing: border-box;
+
+
+       
+    }
+
+    .imageMain img{
+        width: 1000px;
+    }
+
+  
+
+}
+
+
+
+  .center{
+    height: calc(100vh);
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    margin: 0 auto;
+    align-items: center;
+
+  }
+
+
+  .main{
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px auto;
+    align-items: center;
+
+  }
+
+  div .textoHeader{
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+
+    width: 88%;
+    height: fit-content;
+  }
+
+
+  .textoHeader h1{
+    font-weight: 900;
+    font-style: normal;
+        background: linear-gradient(0.9turn, #ff0d00, #e40085);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 94px;
+    
+  }
+
+
+  .textoHeader p{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+
+  .buttonMain{
+    text-align: right;
+    height: fit-content;
+
+  }
+
+  
+ section{
+      
+     position: relative;
+     background: linear-gradient(1turn, #00000022, rgb(0, 0, 0));
+     background-clip: text;
+
+     font-weight: 1000;
+
+     overflow: hidden;
+     z-index: 0;
+     transition: all 0.3s;
+
+
+
+  }
+ 
+  section::before{
+     content: '';
+     position: absolute;
+     display: block;
+     top: 0;
+     left: 120px;
+     width: 70%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent, #89898917, transparent);
+     transition: all 3s;
+     z-index: -1;
+     transform: translateX(-120px) skew(-20deg);
+  }
+ 
+ 
+  section:hover::before{
+     transform: translateX(300px) skew(-20deg);
+  }
+ 
+
+
+  
+
+
+  nav{
+    position: sticky;
+    box-shadow:  1px 2px #7d7b7b;
+    transform-style: preserve-3d;
+    background: rgba(14, 14, 14, 0.3);
+    justify-content: space-between;
+    align-items: center ;
+    height: 50px;
+    display: flex;
+
+  }
+
+  .menu1{
+    margin: 0 10px;
+    padding: 0;
+    justify-content: space-between;
+
+  }
+
+    .logomenu a{
+        margin: 40px;
+            font-weight: 1000;
+        font-size: 18px;
+        text-decoration: none;
+         color: white;
+    }
+
+
+    .logomenu a:hover{
+        text-transform: uppercase;
+        transform: scale(1.125);
+    
+        border-color: rgba(255, 0, 0, 0.9);
+        transition: all .3s ease;  
+        background: linear-gradient(0.9turn, #ff0095, #ff2200fb);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+  div.menuLink{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px ;
+
+
+
+  }
+
+   .menuLink a{
+    margin: 45px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .menuLink a:hover{
+    text-transform: uppercase;
+    transform: scale(1.125);
+
+    border-color: rgba(255, 0, 0, 0.9);
+    transition: all .3s ease;  
+    background: linear-gradient(0.9turn, #ff0095, #ff2200fb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+
+  main{
+padding: 120px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+    padding: 0px auto;
+    margin: 0 auto;
+  }
+
+  main .textMain{
+    padding: 20px;
+
+
+
+
+    color: white;
+
+  }
+
+  .textMain h1{
+    font-weight: 1000;
+    text-align: center;
+    font-size: 90px;
+    background: linear-gradient(0.9turn, #ff0095, #ff2200fb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .textMain p{
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+  }
+
+
+
+  .aboutMe img{ 
+    border-radius: 50%;
+    border: 3px solid #ff009598;
+
+    width: 30%;
+  }
